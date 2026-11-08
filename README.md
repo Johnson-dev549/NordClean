@@ -57,8 +57,11 @@ accessibility and Lighthouse results.
 
 ## Deployment
 
-Live website: Add after deployment.
-GitHub repository: Add after repository creation.
+Live website:
+https://johnson-dev549.github.io/NordClean/
+
+GitHub repository:
+https://github.com/Johnson-dev549/NordClean
 
 ## Important Notice
 

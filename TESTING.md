@@ -2,7 +2,7 @@
 
 **Project:** NordClean Cleaning Services — fictional portfolio website
 **Report updated:** 2026-11-08
-**Current overall status:** **Local pre-deployment checks completed: two Lighthouse audits, JavaScript syntax, all seven image aspect ratios, eight WebP asset checks, and 19 user-reported responsive/accessibility/functional tests passed. Public deployment and live-site verification are pending.**
+**Current overall status:** **GitHub Pages publication confirmed by user-provided GitHub Pages settings screenshot. Source-code checks and 19 local user-reported manual tests passed. Final live-site regression tests after the preload correction have not yet been confirmed.**
 
 ## 1. Scope and evidence
 
@@ -16,7 +16,7 @@ Evidence used:
 - User-confirmed manual checklist (2026-11-08): 12 accessibility and functional checks reported passed.
 - Earlier browser confirmation that the six Request Service selections worked; user now reports the latest service-selection regression checks also passed.
 
-**Verification limits:** All eight WebP assets were supplied and verified for format, intrinsic dimensions, and file sizes. The latest HTML width/height attributes match the seven content images. The user supplied a full-page desktop screenshot showing website rendering and reported all 19 manual tests passed. These are user-provided observations, not independently reproduced browser tests. No public deployment has been verified.
+**Verification limits:** All eight WebP assets were supplied and verified for format, intrinsic dimensions, and file sizes. The latest HTML width/height attributes match the seven content images. The user supplied a full-page desktop screenshot showing website rendering and reported all 19 manual tests passed. These are user-provided observations, not independently reproduced browser tests. GitHub Pages publication was subsequently confirmed by a user-provided GitHub Pages settings screenshot. Full post-deployment browser testing after the preload correction remains unconfirmed.
 
 ## 2. Source-code checks
 
@@ -31,7 +31,7 @@ Evidence used:
 | Back-to-Top and active navigation | **Implemented** | CSS and JavaScript present; latest behavior reported passed by user; not independently browser-tested |
 | Seven content image dimensions | **Pass** | All seven `width`/`height` pairs in latest HTML match measured WebP dimensions (see section 7) |
 | WebP image paths | **Files verified; browser loading unverified** | Eight expected WebP files supplied, opened and measured; confirm the final local project has them at the relative paths |
-| Hero image preload | **Implemented** | Preload and CSS background both reference `images/hero-cleaning.webp` |
+| Hero image preload | **Removed (source verified)** | Latest `index.html` no longer contains the preload; CSS still references `images/hero-cleaning.webp` |
 | Meta description and fictional-business notice | **Present** | Both are included in HTML |
 
 ## 3. Responsive testing
@@ -127,10 +127,10 @@ All eight WebP files were uploaded and successfully read. The size below is the 
 
 ## 8. Browser testing environment
 
-- **Browser:** Not recorded in the latest submitted testing report (Firefox was used in earlier development testing).
+- **Browser:** Firefox, evidenced by the user-provided live-site Developer Tools Console screenshot.
 - **Browser version:** Not recorded.
 - **Date of latest manual responsive testing:** Not recorded (the user confirmed manual accessibility/functional tests on 2026-11-08).
-- **Manual JavaScript Console test results:** User reported no blocking JavaScript Console errors on 2026-11-08.
+- **Manual JavaScript Console test results:** User reported no blocking errors in local tests. On the deployed site, a user screenshot showed one non-blocking unused-preload warning; removal has since been pushed, but a fresh live-site Console result was not supplied.
 - **Automated Lighthouse audit date:** 2026-11-06.
 
 ## 9. Known issues and unverified items
@@ -140,14 +140,15 @@ All eight WebP files were uploaded and successfully read. The size below is the 
 - All eight WebP assets and seven content-image aspect-ratio attributes are verified; the full-page screenshot shows local desktop rendering.
 - Original pre-conversion image file sizes were not all supplied, so exact per-image compression percentages are not calculated.
 - The README correctly references `images/nordclean-preview.png`; the screenshot asset was supplied. Verify the same file exists at that relative path in the Git repository.
-- Git repository state, remote configuration, current branch, and `git diff --check` remain unverified; run these checks before pushing.
-- No live GitHub Pages deployment or post-deployment tests have been verified.
+- GitHub push to `origin/main` confirmed by user-provided terminal output; most recent reported code commit: `976a8c3` (removed Hero preload). The README documentation update in the latest uploaded file has not been confirmed pushed.
+- GitHub Pages settings screenshot confirmed the site is live at https://johnson-dev549.github.io/NordClean/. A Firefox Console screenshot showed one non-blocking unused-preload warning; the preload was subsequently removed and pushed, but the updated live Console and full regression checks have not been confirmed.
 
 ## 10. Final status
 
-**Status: LOCAL PRE-DEPLOYMENT TESTING PASSED (WITH USER-REPORTED MANUAL RESULTS); GITHUB PUSH AND LIVE DEPLOYMENT NOT YET VERIFIED.**
+**Status: GITHUB PAGES PUBLICATION CONFIRMED; LOCAL TESTS PASSED (WITH USER-REPORTED MANUAL RESULTS). FINAL POST-CORRECTION LIVE-SITE REGRESSION TESTS AND LATEST README PUSH NOT YET CONFIRMED.**
 
 - **Verified from submitted code/files:** JavaScript syntax; seven correct HTML image dimension pairs; eight valid WebP assets and sizes; README screenshot reference and screenshot asset.
 - **Verified from previously submitted reports:** Lighthouse mobile Performance 97, Accessibility 100, Best Practices 100, SEO 100.
 - **Passed by user report (2026-11-08):** Seven responsive widths and 12 accessibility/functional checks (19 manual checks total).
-- **Still required:** Confirm clean Git status/diff and intended branch/remote, commit and push, then test the public site and add the actual URL to README.
+- **Confirmed from user evidence:** Initial commit and push to GitHub, Pages publication, and preload-removal push (`976a8c3`). Latest README includes the public URL in the uploaded file.
+- **Still required:** Verify the live site after the preload correction, and commit/push the latest README and this updated testing report if they differ from the repository version.
