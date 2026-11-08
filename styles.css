@@ -1,0 +1,1405 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #1d2939;
+  background-color: #ffffff;
+}
+
+
+section {
+  padding: 50px 20px;
+}
+
+
+/* =====================================
+   LESSON 4 - SERVICES SECTION
+===================================== */
+
+.services {
+  padding: 90px 20px;
+  background-color: #f1f7fb;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Services heading */
+
+.services-heading {
+  max-width: 700px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.section-label {
+  color: #2176ae;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.services-heading h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin: 12px 0 18px;
+}
+
+.section-description {
+  color: #526579;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Service cards grid */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+/* Individual service card */
+
+.service-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: 0 6px 18px rgba(16, 42, 67, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 12px 28px rgba(16, 42, 67, 0.15);
+}
+
+/* Card image */
+
+.service-card img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+/* Card text content */
+
+.service-card-content {
+  padding: 24px;
+}
+
+
+.service-card h3 {
+  margin: 0 0 12px;
+  color: #164e63;
+  font-size: 21px;
+}
+
+
+.service-card p {
+  color: #526579;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+/* Service link */
+
+.service-link {
+  display: inline-block;
+  color: #17689c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+  color: #0e7490;
+}
+
+.service-link:focus-visible {
+  outline: 3px solid #2176ae;
+  outline-offset: 4px;
+}
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #102a43;
+  color: white;
+}
+
+
+.quote-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #102a43;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.quote-btn:hover,
+.quote-btn:focus-visible {
+  background-color: #2176ae;
+}
+
+
+/* =====================================
+   LESSON 2 - PROFESSIONAL HEADER
+===================================== */
+
+.site-header {
+  background-color: #102a43;
+  color: white;
+  padding: 16px 20px;
+
+border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+
+}
+
+/* Company branding */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: white;
+  text-decoration: none;
+}
+
+.brand-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 42px;
+  height: 42px;
+
+  background-color: #2176ae;
+  border-radius: 8px;
+  font-size: 26px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: lightblue;
+}
+
+.brand-tagline {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #c5d6e3;
+}
+
+/* Navigation */
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-list a:hover {
+  color: #8ed1fc;
+}
+
+.nav-list a:focus-visible,
+.brand:focus-visible {
+  outline: 2px solid #8ed1fc;
+  outline-offset: 4px;
+}
+
+/* Contact button */
+
+.nav-list .nav-contact {
+  display: inline-block;
+  background-color: #2176ae;
+  color: white;
+
+  padding: 10px 18px;
+  border-radius: 10px;
+
+  transition: background-color 0.2s ease;
+}
+
+.nav-list .nav-contact:hover {
+  background-color: #155a86;
+  color: white;
+}
+
+
+
+/* =====================================
+   LESSON 3 - HERO SECTION
+===================================== */
+
+.hero {
+  min-height: 600px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(16, 42, 67, 0.92),
+      rgba(16, 42, 67, 0.40)
+    ),
+    url("images/hero-cleaning.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+.hero-label {
+  color: #a5f3fc;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.15;
+  margin: 0 0 24px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #8ed1fc;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 600px;
+  margin-bottom: 32px;
+  color: #f1f5f9;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+
+/* Hero buttons */
+
+.hero-btn {
+  display: inline-block;
+
+  padding: 14px 24px;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Primary button */
+
+.hero-btn-primary {
+  background-color: #2176ae;
+  color: white;
+  border-radius: 12px;
+}
+
+.hero-btn-primary:hover {
+  background-color: #155a86;
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Secondary button */
+
+.hero-btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.hero-btn-secondary:hover {
+  background-color: white;
+  color: #102a43;
+  transform: translateY(-2px);
+}
+
+/* Keyboard accessibility */
+
+.hero-btn:focus-visible {
+  outline: 3px solid #8ed1fc;
+  outline-offset: 4px;
+}
+
+
+/* =====================================
+   LESSON 5 - ABOUT US SECTION
+===================================== */
+
+.about {
+  padding: 90px 20px;
+  background-color: #ffffff;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 50px;
+}
+
+/* About image */
+
+.about-image img {
+  display: block;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+
+/* About content */
+
+.about-content h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  color: #164e63;
+  margin: 12px 0 24px;
+}
+
+.about-description {
+  color: #526579;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* About features */
+
+.about-features {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 32px;
+}
+
+.about-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin-bottom: 14px;
+  color: #102a43;
+  font-weight: 500;
+}
+
+.about-features li::before {
+  content: "✓";
+  color: #2176ae;
+  font-weight: bold;
+}
+
+/* About button */
+
+.about-btn {
+  display: inline-block;
+  padding: 14px 26px;
+
+  background-color: #2176ae;
+  color: white;
+  border-radius: 8px;
+
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #155a86;
+  transform: translateY(-2px);
+}
+
+.about-btn:focus-visible {
+  outline: 3px solid #2176ae;
+  outline-offset: 4px;
+}
+
+
+
+/* =====================================
+   LESSON 5 - WHY CHOOSE US
+===================================== */
+
+.why-us {
+  padding: 90px 20px;
+  background-color: #f1f7fb;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 48px;
+}
+
+.why-heading h2 {
+  font-size: 38px;
+  color: #102a43;
+  margin: 12px 0 18px;
+}
+
+.why-heading p:not(.section-label) {
+  color: #526579;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+/* Feature cards */
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.why-card {
+  padding: 32px 24px;
+
+  background-color: white;
+  border-radius: 16px;
+
+  box-shadow: 0 6px 18px rgba(16, 42, 67, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(16, 42, 67, 0.15);
+}
+
+/* Icons */
+
+.why-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 56px;
+  height: 56px;
+
+  background-color: #e0f2fe;
+  color: #2176ae;
+
+  border-radius: 12px;
+  font-size: 28px;
+  font-weight: bold;
+
+  margin-bottom: 24px;
+
+transition: background-color 0.3s ease;
+
+}
+
+.why-card:hover .why-icon {
+  background-color: #bae6fd;
+}
+
+
+/* Text */
+
+.why-card h3 {
+  font-size: 20px;
+  color: #102a43;
+  margin: 0 0 12px;
+}
+
+.why-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #526579;
+  margin: 0;
+}
+
+
+
+/* =====================================
+   LESSON 6 - CONTACT SECTION
+===================================== */
+
+.contact {
+  padding: 90px 20px;
+  background-color: #f1f7fb;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  align-items: stretch;
+}
+
+/* Contact information */
+
+.contact-info {
+  padding: 48px;
+  border-radius: 16px;
+  background-color: #102a43;
+  color: white;
+}
+
+.contact-info .section-label {
+  color: #a5f3fc;
+}
+
+.contact-info h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin: 12px 0 24px;
+}
+
+.contact-description {
+  color: #d1e5f2;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.contact-detail p {
+  margin: 0;
+}
+
+.demo-notice {
+  margin-top: 36px;
+  font-size: 13px;
+  color: #c5d6e3;
+}
+
+/* Form container */
+
+.contact-form-wrapper {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+
+  box-shadow: 0 8px 24px rgba(16, 42, 67, 0.08);
+}
+
+.contact-form-wrapper h3 {
+  margin: 0 0 28px;
+  font-size: 26px;
+  color: #102a43;
+}
+
+/* Form fields */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #102a43;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 13px 14px;
+
+  border: 1px solid #b8c7d4;
+  border-radius: 8px;
+  background-color: white;
+  color: #102a43;
+
+  font: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group input:focus-visible,
+.form-group select:focus-visible,
+.form-group textarea:focus-visible {
+  outline: 3px solid #8ed1fc;
+  outline-offset: 2px;
+}
+
+/* Errors */
+
+.field-error {
+  display: block;
+  min-height: 20px;
+  margin-top: 5px;
+  color: #b42318;
+  font-size: 13px;
+}
+
+.form-group .invalid {
+  border-color: #b42318;
+}
+
+/* Submit button */
+
+.submit-btn {
+  width: 100%;
+  padding: 15px 24px;
+  border: none;
+  border-radius: 8px;
+
+  background-color: #0e7490;
+  color: white;
+
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #155a86;
+}
+
+.submit-btn:focus-visible {
+  outline: 3px solid #8ed1fc;
+  outline-offset: 3px;
+}
+
+/* Form status */
+
+.form-status {
+  min-height: 24px;
+  margin: 18px 0 0;
+  font-weight: 600;
+}
+
+.form-status.success {
+  color: #166534;
+}
+
+.form-status.error {
+  color: #b42318;
+}
+
+
+
+/* =====================================
+   LESSON 7 - ACTIVE NAVIGATION
+===================================== */
+
+.nav-list a.active {
+  color: #8ed1fc;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* Contact button needs its own active style */
+
+.nav-list .nav-contact.active {
+  color: white;
+  background-color: #0e7490;
+  text-decoration: underline;
+}
+
+
+
+/* =====================================
+   LESSON 7 - BACK TO TOP
+===================================== */
+
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+
+  width: 52px;
+  height: 52px;
+
+  border: none;
+  border-radius: 50%;
+
+ background-color: #0e7490;
+  color: white;
+
+  font-size: 26px;
+  font-weight: bold;
+
+  cursor: pointer;
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateY(12px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+
+.back-to-top:hover {
+  background-color: #155e75;
+  transform: translateY(0) scale(1.08);
+}
+
+
+.back-to-top:focus-visible {
+  outline: 3px solid #8ed1fc;
+  outline-offset: 4px;
+}
+
+
+/* =====================================
+   LESSON 7 - ACCESSIBILITY
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .back-to-top,
+  .service-card,
+  .why-card,
+  .hero-btn {
+    transition: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .back-to-top {
+    right: 16px;
+    bottom: 16px;
+    width: 46px;
+    height: 46px;
+  }
+}
+
+
+
+/* =====================================
+   LESSON 8 - MOBILE MENU BUTTON
+===================================== */
+
+.menu-toggle {
+  display: none;
+
+  width: 52px;
+  height: 52px;
+
+  padding: 10px;
+  border: 1px solid #a5f3fc;
+  border-radius: 8px;
+
+  background-color: transparent;
+  color: white;
+
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.menu-toggle:hover {
+  background-color: #173955;
+}
+
+
+/* Hamburger bars */
+
+.menu-bar {
+  display: block;
+  width: 24px;
+  height: 3px;
+
+  background-color: white;
+  border-radius: 2px;
+
+  transition: transform 0.3s ease,
+              opacity 0.3s ease;
+}
+
+/* Keyboard focus */
+
+.menu-toggle:focus-visible {
+  outline: 3px solid #8ed1fc;
+  outline-offset: 4px;
+}
+
+/* Hamburger transforms into X */
+
+.menu-toggle[aria-expanded="true"]
+.menu-bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"]
+.menu-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"]
+.menu-bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+
+/* =====================================
+   LESSON 2 - RESPONSIVE HEADER
+===================================== */
+
+@media (max-width: 900px) {
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .site-header {
+    padding: 16px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+
+  .nav-list {
+    gap: 12px 16px;
+  }
+
+  .nav-list a {
+    font-size: 14px;
+  }
+
+  .nav-list .nav-contact {
+    padding: 8px 14px;
+  }
+
+}
+
+
+/* =====================================
+   LESSON 3 - RESPONSIVE HERO
+===================================== */
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .hero {
+    min-height: 520px;
+    padding: 70px 24px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+  .hero {
+    min-height: 480px;
+    padding: 60px 20px;
+
+    background-position: 60% center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-btn {
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+
+/* =====================================
+   LESSON 4 - RESPONSIVE SERVICES
+===================================== */
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .services {
+    padding: 70px 24px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .services-heading h2 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .services {
+    padding: 60px 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-heading h2 {
+    font-size: 28px;
+  }
+
+  .service-card img {
+    height: 200px;
+  }
+}
+
+
+/* =====================================
+   LESSON 5 - RESPONSIVE LAYOUT
+===================================== */
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about-image img {
+    height: 380px;
+  }
+
+  .about-content h2,
+  .why-heading h2 {
+    font-size: 32px;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .about,
+  .why-us {
+    padding: 60px 20px;
+  }
+
+  .about-image img {
+    height: 280px;
+  }
+
+  .about-content h2,
+  .why-heading h2 {
+    font-size: 28px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .why-card {
+    padding: 26px 20px;
+  }
+}
+
+
+/* =====================================
+   LESSON 6 - RESPONSIVE CONTACT
+===================================== */
+
+@media (max-width: 900px) {
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    padding: 36px;
+  }
+
+  .contact-info h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .contact-container {
+    gap: 24px;
+  }
+
+  .contact-info,
+  .contact-form-wrapper {
+    padding: 24px;
+  }
+
+  .contact-info h2 {
+    font-size: 28px;
+  }
+}
+
+
+.service-selection-info {
+  display: block;
+  color: #166534;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+
+/* =====================================
+   LESSON 8 - RESPONSIVE NAVIGATION
+===================================== */
+
+@media (max-width: 900px) {
+
+  .header-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  /* Hide the navigation until opened */
+
+  .main-nav {
+    display: none;
+    width: 100%;
+    order: 3;
+  }
+
+  /* Show the expanded menu */
+
+  .main-nav.is-open {
+    display: block;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 6px;
+    padding-top: 16px;
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 8px;
+  }
+
+  .nav-list a:hover {
+    background-color: #173955;
+  }
+
+  .nav-list .nav-contact {
+    display: block;
+    text-align: center;
+    margin-top: 6px;
+  }
+}
+
+
+/* Lesson 8 - Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .menu-bar {
+    transition: none;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .nav-list a.active {
+    background-color: #164e63;
+    color: #ffffff;
+  }
+
+  .nav-list .nav-contact.active {
+    background-color: #0e7490;
+    color: #ffffff;
+  }
+
+}
+
+
+/* =====================================
+   LESSON 9 - ACCESSIBILITY
+===================================== */
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+
+  padding: 12px 18px;
+  background-color: #ffffff;
+  color: #102a43;
+
+  border: 3px solid #2176ae;
+  border-radius: 8px;
+
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 2000;
+
+  transform: translateY(-160%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+
+
+/* Consistent keyboard focus indicator */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #8ed1fc;
+  outline-offset: 4px;
+}
+
+
+/* =====================================
+   LESSON 10 - PROFESSIONAL FOOTER
+===================================== */
+
+.site-footer {
+  background-color: #102a43;
+  color: #ffffff;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.site-footer h2,
+.site-footer h3 {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.site-footer p {
+  color: #c5d6e3;
+}
+
+.footer-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-navigation li {
+  margin-bottom: 10px;
+}
+
+.footer-navigation a {
+  color: #c5d6e3;
+  text-decoration: none;
+}
+
+.footer-navigation a:hover {
+  color: #8ed1fc;
+  text-decoration: underline;
+}
+
+.footer-navigation a:focus-visible {
+  outline: 3px solid #8ed1fc;
+  outline-offset: 4px;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 32px auto 0;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255,255,255,0.2);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

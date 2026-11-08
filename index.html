@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Explore NordClean's fictional professional cleaning services, including home, office, deep and commercial cleaning. A responsive portfolio website demonstration."
+    />
+
+    <title>NordClean | Cleaning Solutions</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <link
+      rel="preload"
+      as="image"
+      href="images/hero-cleaning.webp"
+      fetchpriority="high"
+    />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content"> Skip to main content </a>
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- Company branding -->
+        <a href="#home" class="brand">
+          <span class="brand-icon" aria-hidden="true">✦</span>
+
+          <span class="brand-text">
+            <span class="brand-name">NordClean</span>
+            <span class="brand-tagline">CLEANING SERVICES</span>
+          </span>
+        </a>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button
+          type="button"
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="menu-bar" aria-hidden="true"></span>
+          <span class="menu-bar" aria-hidden="true"></span>
+          <span class="menu-bar" aria-hidden="true"></span>
+        </button>
+
+        <!-- MAIN NAVIGATION -->
+        <nav
+          id="primary-navigation"
+          class="main-nav"
+          aria-label="Main navigation"
+        >
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+
+            <li>
+              <a href="#contact" class="nav-contact"> Contact </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <!-- HERO SECTION -->
+      <section id="home" class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <p class="hero-label">PROFESSIONAL CLEANING SERVICES</p>
+
+            <h1>
+              A Cleaner Space.
+              <span>A Better Everyday Life.</span>
+            </h1>
+
+            <p class="hero-description">
+              NordClean provides reliable cleaning solutions for homes and
+              businesses. Enjoy a cleaner, fresher and more comfortable
+              environment.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="hero-btn hero-btn-primary">
+                Request a Free Quote
+              </a>
+
+              <a href="#services" class="hero-btn hero-btn-secondary">
+                Explore Our Services
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section id="services" class="services">
+        <div class="services-container">
+          <div class="services-heading">
+            <p class="section-label">WHAT WE OFFER</p>
+            <h2>Our Cleaning Services</h2>
+            <p class="section-description">
+              Reliable cleaning solutions for homes, offices and commercial
+              properties.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <!-- Service Card 1 -->
+            <article class="service-card" data-service="home">
+              <img
+                src="images/services/home-cleaning.webp"
+                alt="A clean and comfortable living room"
+               width="800"
+  height="533"
+  loading="lazy"
+  decoding="async"
+              />
+
+              <div class="service-card-content">
+                <h3>Home Cleaning</h3>
+                <p>
+                  Regular cleaning services to keep your home fresh, comfortable
+                  and welcoming.
+                </p>
+                <a href="#contact" class="service-link"> Request Service </a>
+              </div>
+            </article>
+
+            <!-- Service Card 2 -->
+            <article class="service-card" data-service="office">
+              <img
+                src="images/services/office-cleaning.webp"
+                alt="A clean modern office environment"
+                width="800"
+  height="533"
+  loading="lazy"
+  decoding="async"
+              />
+
+              <div class="service-card-content">
+                <h3>Office Cleaning</h3>
+                <p>
+                  Professional cleaning solutions for offices and productive
+                  workspaces.
+                </p>
+                <a href="#contact" class="service-link"> Request Service </a>
+              </div>
+            </article>
+
+            <!-- Service Card 3 -->
+            <article class="service-card" data-service="deep">
+              <img
+                src="images/services/deep-cleaning.webp"
+                alt="A spotless modern kitchen"
+ width="800"
+  height="1000"
+  loading="lazy"
+  decoding="async"
+              />
+
+              <div class="service-card-content">
+                <h3>Deep Cleaning</h3>
+                <p>
+                  Detailed cleaning for areas requiring extra attention and
+                  care.
+                </p>
+                <a href="#contact" class="service-link"> Request Service </a>
+              </div>
+            </article>
+
+            <!-- Service Card 4 -->
+            <article class="service-card" data-service="window">
+              <img
+                src="images/services/window-cleaning.webp"
+                alt="Clean glass windows"
+                width="800"
+  height="1200"
+  loading="lazy"
+  decoding="async"
+              />
+
+              <div class="service-card-content">
+                <h3>Window Cleaning</h3>
+                <p>
+                  Professional window cleaning to improve brightness and
+                  visibility.
+                </p>
+                <a href="#contact" class="service-link"> Request Service </a>
+              </div>
+            </article>
+
+            <!-- Service Card 5 -->
+            <article class="service-card" data-service="move-out">
+              <img
+                src="images/services/move-out-cleaning.webp"
+                alt="A clean and empty apartment"
+               width="800"
+  height="1200"
+  loading="lazy"
+  decoding="async"
+              />
+
+              <div class="service-card-content">
+                <h3>Move-Out Cleaning</h3>
+                <p>Thorough cleaning when moving into or out of a property.</p>
+                <a href="#contact" class="service-link"> Request Service </a>
+              </div>
+            </article>
+
+            <!-- Service Card 6 -->
+            <article class="service-card" data-service="commercial">
+              <img
+                src="images/services/commercial-cleaning.webp"
+                alt="A clean commercial business interior"
+                 width="800"
+  height="533"
+  loading="lazy"
+  decoding="async"
+              />
+
+              <div class="service-card-content">
+                <h3>Commercial Cleaning</h3>
+                <p>
+                  Flexible cleaning solutions for shops and other commercial
+                  spaces.
+                </p>
+                <a href="#contact" class="service-link"> Request Service </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT US SECTION -->
+      <section id="about" class="about">
+        <div class="about-container">
+          <!-- About image -->
+          <div class="about-image">
+            <img
+              src="images/about-cleaning.webp"
+              alt="A professional cleaner working in a modern space"
+   width="1000"
+  height="1500"
+  loading="lazy"
+  decoding="async"
+              />
+          </div>
+
+          <!-- About content -->
+          <div class="about-content">
+            <p class="section-label">ABOUT NORDCLEAN</p>
+
+            <h2>Making Every Space Feel Fresh and Clean</h2>
+
+            <p class="about-description">
+              NordClean provides professional cleaning solutions for homes,
+              offices and commercial properties.
+            </p>
+
+            <p class="about-description">
+              Our goal is to help customers enjoy cleaner, healthier and more
+              comfortable spaces through dependable service.
+            </p>
+
+            <ul class="about-features">
+              <li>Reliable cleaning services</li>
+              <li>Flexible cleaning schedules</li>
+              <li>Professional customer support</li>
+            </ul>
+
+            <a href="#contact" class="about-btn"> Contact Us </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US SECTION -->
+      <section id="why-us" class="why-us">
+        <div class="why-container">
+          <div class="why-heading">
+            <p class="section-label">WHY CHOOSE NORDCLEAN?</p>
+
+            <h2>Cleaning You Can Count On</h2>
+
+            <p>
+              We focus on providing dependable cleaning solutions designed
+              around customer needs.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <article class="why-card">
+              <div class="why-icon" aria-hidden="true">✓</div>
+              <h3>Reliable Service</h3>
+              <p>Dependable cleaning solutions for homes and businesses.</p>
+            </article>
+
+            <article class="why-card">
+              <div class="why-icon" aria-hidden="true">€</div>
+              <h3>Affordable Pricing</h3>
+              <p>Clear and competitive prices for different cleaning needs.</p>
+            </article>
+
+            <article class="why-card">
+              <div class="why-icon" aria-hidden="true">▦</div>
+              <h3>Flexible Scheduling</h3>
+              <p>
+                Convenient cleaning appointments that fit customer schedules.
+              </p>
+            </article>
+
+            <article class="why-card">
+              <div class="why-icon" aria-hidden="true">✦</div>
+              <h3>Quality Cleaning</h3>
+              <p>Attention to detail for fresher, cleaner spaces.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact">
+        <div class="contact-container">
+          <!-- Company contact information -->
+          <div class="contact-info">
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h2>Let's Make Your Space Shine</h2>
+
+            <p class="contact-description">
+              Have a question or need a cleaning quote? Fill in the form and
+              tell us what you need.
+            </p>
+
+            <div class="contact-detail">
+              <span aria-hidden="true">📍</span>
+              <p>Aurich, Germany</p>
+            </div>
+
+            <div class="contact-detail">
+              <span aria-hidden="true">🕒</span>
+              <p>Flexible cleaning appointments</p>
+            </div>
+
+            <p class="demo-notice">
+              Fictional business — portfolio demonstration. This form does not
+              send messages.
+            </p>
+          </div>
+
+          <!-- Contact form -->
+          <div class="contact-form-wrapper">
+            <h3>Request a Quote</h3>
+
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="fullName"
+                  placeholder="Your full name"
+                  autocomplete="name"
+                  aria-describedby="name-error"
+                  required
+                />
+                <small id="name-error" class="field-error"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  aria-describedby="email-error"
+                  required
+                />
+                <small id="email-error" class="field-error"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Cleaning Service</label>
+
+                <select
+                  id="service"
+                  name="service"
+                  aria-describedby="service-error selected-service-info"
+                  required
+                >
+                  <option value="">Select a service</option>
+                  <option value="home">Home Cleaning</option>
+                  <option value="office">Office Cleaning</option>
+                  <option value="deep">Deep Cleaning</option>
+                  <option value="window">Window Cleaning</option>
+                  <option value="move-out">Move-Out Cleaning</option>
+                  <option value="commercial">Commercial Cleaning</option>
+                </select>
+
+                <small id="service-error" class="field-error"></small>
+
+                <small
+                  id="selected-service-info"
+                  class="service-selection-info"
+                  aria-live="polite"
+                ></small>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about your cleaning needs"
+                  aria-describedby="message-error"
+                  required
+                ></textarea>
+
+                <small id="message-error" class="field-error"></small>
+              </div>
+
+              <button type="submit" class="submit-btn">Send Message</button>
+
+              <p
+                id="form-status"
+                class="form-status"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+<!-- LESSON 10 - PROFESSIONAL FOOTER -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h2>NordClean Services</h2>
+      <p>
+        A fictional cleaning-service website
+        created as a web development portfolio project.
+      </p>
+    </div>
+
+    <nav class="footer-navigation"
+         aria-label="Footer navigation">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-project">
+      <h3>About This Project</h3>
+      <p>
+        Built with HTML, CSS and JavaScript.
+        Demonstrates responsive design,
+        accessibility and interactive features.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      &copy; 2026 NordClean Services.
+      Fictional business — portfolio demonstration.
+    </p>
+  </div>
+</footer>
+
+
+    <!-- BACK TO TOP BUTTON -->
+    <button
+      type="button"
+      id="back-to-top"
+      class="back-to-top"
+      aria-label="Back to top"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      ↑
+    </button>
+  </body>
+</html>
